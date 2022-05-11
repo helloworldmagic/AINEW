@@ -4,7 +4,7 @@ using namespace std;
 int Min=INT_MAX;
 vector<int> tsp;
 
-voidDFS(int graph[][V], vector<bool>& visited, int currPos, int n, int count, int cost,vector<int> path){
+void DFS(int graph[][V], vector<bool>& visited, int currPos, int n, int count, int cost,vector<int> path){
     
     if (count == n && graph[currPos][0]) {
         Min = min(Min, cost + graph[currPos][0]);
